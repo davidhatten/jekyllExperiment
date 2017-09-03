@@ -28,8 +28,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-destination: public
-source: src
 exclude: ['node_modules']
 
 # Exclude from processing.
