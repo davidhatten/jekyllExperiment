@@ -4,3 +4,6 @@ _site
 src/assets/bundle.js
 public
 node_modules
+_layouts
+_posts
+assets
