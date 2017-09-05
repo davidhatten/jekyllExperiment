@@ -22450,22 +22450,19 @@ var Hello = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Hello.__proto__ || Object.getPrototypeOf(Hello)).call(this, props));
 
-        _this.state = { title: "Title is here!" };
-
-        _this.changeTitle = _this.changeTitle.bind(_this);
-        return _this;
-    }
-
-    _createClass(Hello, [{
-        key: "changeTitle",
-        value: function changeTitle() {
-            this.setState(function (prevState) {
+        _this.changeTitle = function () {
+            _this.setState(function (prevState) {
                 return {
                     title: "The title has been changed!"
                 };
             });
-        }
-    }, {
+        };
+
+        _this.state = { title: "Title is here!" };
+        return _this;
+    }
+
+    _createClass(Hello, [{
         key: "render",
         value: function render() {
             var pathStyle = {
