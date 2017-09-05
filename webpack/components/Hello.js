@@ -4,10 +4,8 @@ class Hello extends Component {
     constructor(props) {
         super(props);
         this.state = {title: "Title is here!"};
-
-        this.changeTitle = this.changeTitle.bind(this);
     }
-    changeTitle(){
+    changeTitle = () => {
         this.setState(prevState => ({
             title: "The title has been changed!"
         }));
